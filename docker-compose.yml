@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  origin:
+    build: .
+    container_name: satta_admin
+    ports:
+    - "3030:3030/tcp"
+    # environment:
+    # networks:
+    #  myipvlan:
+    #    ipv4_address: 192.168.0.12
+
+# networks:
+ #  myipvlan:
+   #  external: true
+   #  name: br0
